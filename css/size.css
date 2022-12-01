@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* width 1400 */
+@media (max-width: 1400px) {
+  .sns__itemlist {
+    width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    background: #f55;
+  }
+}

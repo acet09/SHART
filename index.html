@@ -1,732 +1,846 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>신한화구</title>
-    <link rel="shortcut icon" href="img/shfavicon.png" type="image/x-icon">
-    <!-- swiper 링크1 -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/index-css.css" type="text/css">
-    <!-- 제이쿼리 링크 -->
-    <script src="js/jquery-3.6.0.js"></script>
-    <!-- easing 플러그인 -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- swiper 링크2 -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- main jquery -->
-    <script src="js/index-js.js"></script>    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선인art(제작중)</title>
+  <link rel="shortcut icon" href="./images/etc/SIfavicon.png" type="image/icon">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">  
+  <link rel="stylesheet" href="./css/size.css" type="text/css">
+  <script src="https://kit.fontawesome.com/a60ed959b1.js" crossorigin="anonymous"></script>
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <div class="wrap">
-        <!-- header nav -->
-        <header>
-            <div class="top_menu">
-                <div class="top_menu_list">
-                    <div class="member">
-                        <ul>
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
-                        </ul>
-                    </div>
-                    <div class="mall">
-                        <a href="#">신한 멤버스</a>
-                    </div>
-                    <div class="total_menu">
-                        <a href="#">신한 아트몰</a>
-                    </div>
-                </div>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header class="trigger-menu-wrapper">
+      <div class="headertop">
+        <div class="headertop__cover">
+          <div><a href="">
+              <p class="headertop__font">로그인</p>
+            </a></div>
+          <div><a href="">
+              <p class="headertop__font">회원가입</p>
+            </a></div>
+          <div class="member"><a href="">
+              <i class="fa-solid fa-paintbrush"></i>
+              <p class="member__font headertop__font">선인 맴버스</p>
+            </a></div>
+          <div class="artmall"><a href="">
+              <p class="artmall__font headertop__font">선인 아트몰</p>
+            </a></div>
+        </div>
+      </div>
+      <nav class="maingnb">
+        <h1 class="mainlogo">
+          <a href="">
+            <img src="./images/header/mainlogo/logomarktext.png" alt="mainlogo">
+          </a>
+        </h1>
+        <div class="navmenu navleft">
+          <ul>
+            <li class="navmenu__main navleft__main">
+              <a href="" class="navmenu__trans">
+                <span>COMPANY</span>
+                <span class="navmenu--showfont">회사소개</span>
+              </a>
+              <ul class="navmenu__sub navleft__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">인사말</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">연혁</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">오시는 길</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="navmenu__main navleft__main">
+              <a href="" class="navmenu__trans">
+                <span>GALLERY</span>
+                <span class="navmenu--showfont">갤러리</span>
+              </a>
+              <ul class="navmenu__sub navleft__sub">
+                <li><a href="#">
+                    <p class="navmenu__sub--line">회화</p>
+                  </a></li>
+                <li><a href="#">
+                    <p class="navmenu__sub--line">조형</p>
+                  </a></li>
+                <li><a href="#">
+                    <p class="navmenu__sub--line">그래피티</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="navmenu__main navleft__main">
+              <a href="" class="navmenu__trans">
+                <span>EVENT</span>
+                <span class="navmenu--showfont">이벤트</span>
+              </a>
+              <ul class="navmenu__sub navleft__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">공모전</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">추첨</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">진행 / 마감</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="navmenu__main navleft__main">
+              <a href="" class="navmenu__trans">
+                <span>NEWS</span>
+                <span class="navmenu--showfont">소식</span>
+              </a>
+              <ul class="navmenu__sub navleft__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">미디어</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">뉴스레터</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">방문</p>
+                  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="navmenu navright">
+          <ul>
+            <li class="navmenu__main navright__main">
+              <a href="#" class="navmenu__trans">
+                <span>REVIEW</span>
+                <span class="navmenu--showfont">제품 소개</span>
+              </a>
+              <ul class="navmenu__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">포스터컬러</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">아크릴컬러</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">수채화물감</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="navmenu__main navright__main">
+              <a href="#" class="navmenu__trans">
+                <span>MUSEUM</span>
+                <span class="navmenu--showfont">전시회</span>
+              </a>
+              <ul class="navmenu__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">전시회 일정</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">예매</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="navmenu__main navright__main">
+              <a href="#" class="navmenu__trans">
+                <span>MALL</span>
+                <span class="navmenu--showfont">매장안내</span>
+              </a>
+              <ul class="navmenu__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">위치검색</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="navmenu__main navright__main">
+              <a href="#" class="navmenu__trans">
+                <span>SERVICE</span>
+                <span class="navmenu--showfont">고객센터</span>
+              </a>
+              <ul class="navmenu__sub">
+                <li><a href="">
+                    <p class="navmenu__sub--line">1:1 문의</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">자주묻는 질문</p>
+                  </a></li>
+                <li><a href="">
+                    <p class="navmenu__sub--line">자유게시판</p>
+                  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="iconmenu">
+        <div class="search">
+          <a href="" class="search__btn">
+            <i class="fa-solid fa-magnifying-glass ">
+              <span class="ir-text">탐색메뉴</span>
+            </i>
+          </a>
+          <div class="search__box">
+            <div class="search--cover">
+              <input class="search--input" type="text" placeholder="궁금하신 제품이나 정보를 빠르게 찾아보세요">
+              <a href="" class="search--icon">
+                <img src="images/header/searchmenu/gnb-search-btn-27x28.png" alt="검색하기">
+              </a>
+              <a href="" class="search--close">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
             </div>
-            <div class="menu_area">
-                <div class="menu1">
-                    <ul>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">회사소개</a>
-                                    <ul class="sub">
-                                        <li><a href="#">인사말</a></li>
-                                        <li><a href="#">연력</a></li>
-                                        <li><a href="#">CI 소개</a></li>
-                                        <li><a href="#">오시는 길</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">이벤트</a>
-                                    <ul class="sub">
-                                        <li><a href="#">공모전</a></li>
-                                        <li><a href="#">추첨</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">갤러리</a>
-                                    <ul class="sub">
-                                        <li><a href="#">회화</a></li>
-                                        <li><a href="#">마커</a></li>
-                                        <li><a href="#">색연필</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">소식</a>
-                                    <ul class="sub">
-                                        <li><a href="#">공장견한</a></li>
-                                        <li><a href="#">미디어소식</a></li>
-                                        <li><a href="#">뉴스레터</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </ul>
+          </div>
+        </div>
+        <div class="sidemenu">
+          <a href="" class="sidemenu__btn">
+            <i class="fa-solid fa-bars">
+              <span class="ir-text">전체목록메뉴</span>
+            </i>
+          </a>
+        </div>
+        <!-- side menu -->
+        <div class="sidemenu__gnb">
+          <div class="sidemenu__left">
+            <div class="sidemenu__nav">
+              <div class="sidemenu__main">
+                <div class="sidemenu__contents">
+                  <a href="#" class="sidemenu--maintext">회사소개</a>
+                  <p class="sidemenu__line sline01">
+                    <span></span>
+                  </p>
+                  <ul class="sidemenu__sub">
+                    <li><a href="">인사말</a></li>
+                    <li><a href="">연혁</a></li>
+                    <li><a href="">오시는 길</a></li>
+                  </ul>
                 </div>
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/shlogoOri.png" alt="logo">
+                <div class="sidemenu__bg active">
+                  <img src="./images/header/sidemenu/sidebg-01.png" alt="팔만대장경">
+                </div>
+              </div>
+              <div class="sidemenu__main">
+                <div class="sidemenu__contents">
+                  <a href="#" class="sidemenu--maintext">갤러리</a>
+                  <p class="sidemenu__line sline02">
+                    <span></span>
+                  </p>
+                  <ul class="sidemenu__sub">
+                    <li><a href="">회화</a></li>
+                    <li><a href="">조형</a></li>
+                    <li><a href="">현대미술</a></li>
+                  </ul>
+                </div>
+                <div class="sidemenu__bg">
+                  <img src="./images/header/sidemenu/sidebg-02.png" alt="미술용품DIY">
+                </div>
+              </div>
+              <div class="sidemenu__main">
+                <div class="sidemenu__contents">
+                  <a href="#" class="sidemenu--maintext">이벤트</a>
+                  <p class="sidemenu__line sline03">
+                    <span></span>
+                  </p>
+                  <ul class="sidemenu__sub">
+                    <li><a href="">공모전</a></li>
+                    <li><a href="">진행 / 마감</a></li>
+                    <li><a href="">추첨</a></li>
+                  </ul>
+                </div>
+                <div class="sidemenu__bg">
+                  <img src="./images/header/sidemenu/sidebg-03.png" alt="안창수화백">
+                </div>
+              </div>
+              <div class="sidemenu__main">
+                <div class="sidemenu__contents">
+                  <a href="#" class="sidemenu--maintext">소식</a>
+                  <p class="sidemenu__line sline04">
+                    <span></span>
+                  </p>
+                  <ul class="sidemenu__sub">
+                    <li><a href="">미디어소식</a></li>
+                    <li><a href="">뉴스레터</a></li>
+                    <li><a href="">방문</a></li>
+                  </ul>
+                </div>
+                <div class="sidemenu__bg">
+                  <img src="./images/header/sidemenu/sidebg-04.png" alt="이집트">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidemenu__right">
+            <div class="sidemenu__box">
+              <ul class="sidemenu__listbox">
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">종이</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">A4</a></li>
+                    <li class="sidemenu__item"><a href="#">B4</a></li>
+                    <li class="sidemenu__item"><a href="#">대형</a></li>
+                    <li class="sidemenu__item"><a href="#">아크릴전용</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">붓</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">모피</a></li>
+                    <li class="sidemenu__item"><a href="#">공업용</a></li>
+                    <li class="sidemenu__item"><a href="#">폴리에스테르</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">팔레트</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">목재</a></li>
+                    <li class="sidemenu__item"><a href="#">플라스틱</a></li>
+                    <li class="sidemenu__item"><a href="#">우레탄</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">장소대여</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">대여정보</a></li>
+                    <li class="sidemenu__item"><a href="#">위치검색</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">판화</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">금속판화</a></li>
+                    <li class="sidemenu__item"><a href="#">목재판화</a></li>
+                    <li class="sidemenu__item"><a href="#">청동판솨</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">판화</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">금속판화</a></li>
+                    <li class="sidemenu__item"><a href="#">목재판화</a></li>
+                    <li class="sidemenu__item"><a href="#">청동판솨</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">조각</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">대리석</a></li>
+                    <li class="sidemenu__item"><a href="#">청동</a></li>
+                    <li class="sidemenu__item"><a href="#">목재</a></li>
+                    <li class="sidemenu__item"><a href="#">점토</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">현대미술</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">비디오</a></li>
+                    <li class="sidemenu__item"><a href="#">디지털</a></li>
+                    <li class="sidemenu__item"><a href="#">팝</a></li>
+                  </ul>
+                </li>
+                <li class="sidemenu__list">
+                  <a href="#" class="sidemenu__title">Graphic</a>
+                  <ul class="sidemenu__items">
+                    <li class="sidemenu__item"><a href="#">Photoshop</a></li>
+                    <li class="sidemenu__item"><a href="#">Illustrater</a></li>
+                    <li class="sidemenu__item"><a href="#">3dmax</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="sidemenu__img">
+                <a class="sidemenu__link sidelink-01">
+                  <span>쇼핑몰<br>바로가기</span>
+                </a>
+                <a class="sidemenu__link sidelink-02">
+                  <span>전시회<br>바로가기</span>
+                </a>
+                <a class="sidemenu__link sidelink-03">
+                  <span>공모전<br>바로가기</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidemenu--closebtn">
+            <a href="#" class="sidemenu--close">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="headerbg"></div>
+    </header>
+    <!-- CONTENTS -->
+    <div id="contents">
+      <!-- banner -->
+      <div id="banner">
+        <div class="swiper mySwiper--banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="slidebg slide-01">
+                <a href="#">
+                  <span class="ir-text">밥 로스 특별전시회</span>
+                </a>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p class="slidebg slide-02">
+                <a href="#">
+                  <span class="ir-text">세계 미술관 탐방하기</span>
+                </a>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p class="slidebg slide-03">
+                <a href="#">
+                  <span class="ir-text">전문가용 한국화 채색물감 24색, 18색</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-btnlist prevbox swiper-prevpagi">
+            <svg class="swiper-button swiper-button-prev banner-prev prevbutton" viewBox="0 100 100 100">
+              <path class="line" d="M50,290 Q50,100 50,10">
+                <animate attributeName="d" begin="banneroverlayprev.mouseover" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q0,140 50,10" />
+                <animate attributeName="d" begin="banneroverlayprev.mouseout" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q0,140 50,10" to="M50,290 Q50,100 50,10" />
+              </path>
+              <rect id="banneroverlayprev" class="rect--op" width="100%" height="300%" />
+            </svg>
+            <p class="swiper-sidetext prevtext">PREV</p>
+          </div>
+          <div class="swiper-btnlist nextbox swiper-nextpagi">
+            <svg class="swiper-button swiper-button-next banner-next nextbutton" viewBox="0 100 100 100">
+              <path class="line" d="M50,290 Q50,100 50,10">
+                <animate attributeName="d" begin="banneroverlaynext.mouseover" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q100,140 50,10" />
+                <animate attributeName="d" begin="banneroverlaynext.mouseout" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q100,140 50,10" to="M50,290 Q50,100 50,10" />
+              </path>
+              <rect id="banneroverlaynext" class="rect--op" width="100%" height="300%" />
+            </svg>
+            <p class="swiper-sidetext nexttext">NEXT</p>
+          </div>
+        </div>
+      </div>
+      <!-- SI STORY -->
+      <section id="story">
+        <h2 class="se--title">SI STORY</h2>
+        <div class="swiper-story-box">
+          <div class="swiper mySwiper-story">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/section/story/Story-01.png" alt="팔만대장경">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/section/story/Story-02.png" alt="D.I.Y">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/section/story/Story-03.png" alt="Ann">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/section/story/Story-04.png" alt="pyramid">
+              </div>
+            </div>
+          </div>
+          <div class="swiper swiper-story-contents">
+            <div class="swiper-wrapper swiper-second-itemlist">
+              <div class="swiper-slide swiper-story-items">
+                <strong>5272만 9천</strong>
+                <p>'석가모니가 일생 동안 설법한<br>
+                  경전과 계율 그리고 그 내용들에<br>
+                  대해 후대의 사람들이 첨부한 논서,<br>
+                  주석서, 이론서들을 집대성한<br>
+                  불교경전의 총서를 가리키는 말이다.</p>
+              </div>
+              <div class="swiper-slide swiper-story-items">
+                <strong>D.I.Y</strong>
+                <p>
+                  가끔 작업을 하다보면 작품에 맞는<br>
+                  캔버스 사이즈가 필요할 때가 있다.<br>
+                  그때마다 작업노트에 메모를 해두고<br>
+                  실제 만드는 시간을 가져보았다.</p>
+              </div>
+              <div class="swiper-slide swiper-story-items">
+                <strong>안창수 화백</strong>
+                <p>
+                  동양화가 설파 안창수(75) 화백은<br>
+                  자타가 공인하는 인생 2모작에<br>
+                  성공한 인물이다.<br>
+                  그는 은행에서 전문금융인으로<br>
+                  정년퇴직한 뒤에 그림을 배워<br>
+                  화가로 유명세를 타고 있다.</p>
+              </div>
+              <div class="swiper-slide swiper-story-items">
+                <strong>사막의 보석</strong>
+                <p>
+                  이집트에서 가장 유명한 관광명소는<br>
+                  기자의 피라미드들로,<br>
+                  고대 7대 불가사의들 중 유일하게<br>
+                  현존해있는 건축물이
+                  기도 하다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-story-bullet"></div>
+          <div class="swiper-btnlist prevbox">
+            <svg class="swiper-button swiper-button-prev story-prev prevbutton" viewBox="0 100 100 100">
+              <path class="line" d="M50,290 Q50,100 50,10">
+                <animate attributeName="d" begin="storyoverlayprev.mouseover" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q0,140 50,10" />
+                <animate attributeName="d" begin="storyoverlayprev.mouseout" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q0,140 50,10" to="M50,290 Q50,100 50,10" />
+              </path>
+              <rect id="storyoverlayprev" class="rect--op" width="100%" height="300%" />
+            </svg>
+            <p class="swiper-sidetext prevtext">PREV</p>
+          </div>
+          <div class="swiper-btnlist nextbox">
+            <svg class="swiper-button swiper-button-next story-next nextbutton" viewBox="0 100 100 100">
+              <path class="line" d="M50,290 Q50,100 50,10">
+                <animate attributeName="d" begin="storyoverlaynext.mouseover" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q100,140 50,10" />
+                <animate attributeName="d" begin="storyoverlaynext.mouseout" dur="0.3s" fill="freeze"
+                  restart="whenNotActive" from="M50,290 Q100,140 50,10" to="M50,290 Q50,100 50,10" />
+              </path>
+              <rect id="storyoverlaynext" class="rect--op" width="100%" height="300%" />
+            </svg>
+            <p class="swiper-sidetext nexttext">NEXT</p>
+          </div>
+        </div>
+      </section>
+      <!-- CONTENT-MIDDLE -->
+      <div id="content__middle" class="content__middle">
+        <!-- SI COLLECTION -->
+        <section id="collection">
+          <h2 class="se--title">SI COLLECTION</h2>
+          <div class="tab__text">
+            <a href="#" class="active">NEW</a>
+            <span></span>
+            <a href="#">BEST</a>
+          </div>
+          <div class="tab__swiper tab__new active">
+            <div class="swiper mySwiper-new">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab__slide">
+                  <img src="./images/section/collection/coll_new_acril.png" alt="tint 12색 물감">
+                  <div class="tab__textbox">
+                    <div class="tab--top">
+                      <span>12색</span>
+                      <span>수채화</span>
+                      <span>전문가</span>
+                    </div>
+                    <div class="tab--center">
+                      <strong>SWT TINT 12색 세트 출시</strong>
+                    </div>
+                    <div class="tab--bottom">
+                      <span>선인 최고급 전문가 수채화 물감</span>
+                    </div>
+                    <a href="#" class="tab--btn">
+                      <span>view</span>
                     </a>
+                  </div>
                 </div>
-                <div class="menu2">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">제품소개</a>
-                                <ul class="sub">
-                                    <li><a href="#">오일컬러</a></li>
-                                    <li><a href="#">포스터컬러</a></li>
-                                    <li><a href="#">수채화물감</a></li>
-                                    <li><a href="#">아크릴컬러</a></li>
-                                    <li><a href="#">마커</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">재료학</a>
-                                <ul class="sub">
-                                    <li><a href="#">미술재료</a></li>
-                                    <li><a href="#">공간학</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">매장안내</a>
-                                <ul class="sub">
-                                    <li><a href="#">위치검색</a></li>
-                                    <li><a href="#">해외매장</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">뮤지엄</a>
-                                <ul class="sub">
-                                    <li><a href="#">전시회</a></li>
-                                    <li><a href="#">기획전</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">고객센터</a>
-                                <ul class="sub">
-                                    <li><a href="#">1:1문의</a></li>
-                                    <li><a href="#">자주묻는 질문</a></li>
-                                    <li><a href="#">이메일 상담</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- 렌즈 아이콘 -->
-                    <div class="search">
-                        <a href="#">
-                            <img src="img/gnb-search-btn.png" alt="검색버튼">
-                        </a>
+                <div class="swiper-slide tab__slide">
+                  <img src="./images/section/collection/coll_new_pastel.png" alt="전문가용 고농축 파스텔">
+                  <div class="tab__textbox">
+                    <div class="tab--top">
+                      <span>호환성</span>
+                      <span>가성비</span>
+                      <span>부드러운느낌</span>
                     </div>
-                    <!-- 전체맵 영역 -->
-                    <div class="total_menu">
-                        <a href="#">
-                            <img src="img/all-menu-btn.png" alt="메뉴버튼">
-                        </a>
+                    <div class="tab--center">
+                      <strong>PANPASTEL PRODUCTS</strong>
                     </div>
-                </div>
-            </div>            
-            <div class="sub_bg"><!-- 서브 배경 --></div>
-            <!-- 검색 텍스트 입력 영역 -->
-            <div class="search_area">
-                <div class="search_in">
-                    <input type="text" placeholder="궁금하신 제품이나 정보를 빠르게 찾아보세요">
-                    <a href="#">
-                        <img src="img/gnb-search-btn-27x28.png" alt="검색하기">
+                    <div class="tab--bottom">
+                      <span>자신만의 개성있는 작품을 완성하세요.</span>
+                    </div>
+                    <a href="#" class="tab--btn">
+                      <span>view</span>
                     </a>
+                  </div>
                 </div>
-                <!-- 검색영역 닫기 버튼 -->
-                <a href="#"><img src="img/wht-xbtn.png" alt="검색 닫기"></a>
-                <div class="in_bg"><!--검색영역 배경--></div>
+                <div class="swiper-slide tab__slide">
+                  <img src="./images/section/collection/coll_new_pencil.png" alt="터치 드로잉 펜슬">
+                  <div class="tab__textbox tab__pencil">
+                    <a href="#" class="tab--btn">
+                      <span>view</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </header>
-
-        <!-- MAIN BENNER -->
-        <section class="visual">                        
-            <!-- Swiper : 클래스명 'mySwiper' 안쓰면 연결 안됨-->
-            <div class="box">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide s1">
-                        <a href="#">
-                            <h1>"어때요, 참 쉽죠?"</h1>
-                            <span>EBS 그림을 그립시다.<br>밥 로스 특별 전시회<br>22.04.22 ~ 22.04.25</span>
-                            <p>어려운 유화 미술의 대중화에 큰 영향을 준 화가<br>
-                                20세기의 가장 상징적인 미국 화가 중 한 명인<br>
-                                밥 로스의 특별전시회가 개최됩니다.<br>
-                                14년간 방송중 제작되었던 원화 100여점<br>
-                                그리고 그동안 공개되지 않았던<br>
-                                수채화 20점등도 공개예정입니다.</p>
-                            <b>추첨을 통해 밥로스와 함께 유화스케치 이벤트도 진행됩니다.</b>
-                            <button type="button" onclick="alert('Hello World!')">VIEW</button>
-                        </a>
-                    </div>
-                    <div class="swiper-slide s2">
-                        <a href="#">
-                            <img src="img/top-img/mulgam_2.png" alt="2">
-                            <button type="button" onclick="alert('Hello World!')">VIEW</button>
-                        </a>
-                    </div>
-                    <div class="swiper-slide s3">
-                        <a href="#">
-                            <img src="img/top-img/world_3.png" alt="3">
-                            <button type="button" onclick="alert('Hello World!')">VIEW</button>
-                        </a>
-                    </div>
-                </div>            
-                <div class="swiper-button-next myNext1"></div>
-                <div class="swiper-button-prev myPrev1"></div>            
+            <div class="swiper-btnlist prevbox">
+              <svg class="swiper-button swiper-button-prev new-prev prevbutton" viewBox="0 100 100 100">
+                <path class="line" d="M50,290 Q50,100 50,10">
+                  <animate attributeName="d" begin="newoverlayprev.mouseover" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q0,140 50,10" />
+                  <animate attributeName="d" begin="newoverlayprev.mouseout" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q0,140 50,10" to="M50,290 Q50,100 50,10" />
+                </path>
+                <rect id="newoverlayprev" class="rect--op" width="100%" height="300%" />
+              </svg>
+              <p class="swiper-sidetext prevtext">PREV</p>
             </div>
+            <div class="swiper-btnlist nextbox">
+              <svg class="swiper-button swiper-button-next new-next nextbutton" viewBox="0 100 100 100">
+                <path class="line" d="M50,290 Q50,100 50,10">
+                  <animate attributeName="d" begin="newoverlaynext.mouseover" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q100,140 50,10" />
+                  <animate attributeName="d" begin="newoverlaynext.mouseout" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q100,140 50,10" to="M50,290 Q50,100 50,10" />
+                </path>
+                <rect id="newoverlaynext" class="rect--op" width="100%" height="300%" />
+              </svg>
+              <p class="swiper-sidetext nexttext">NEXT</p>
+            </div>
+            <div class="swiper-scrollbar new-scroll"></div>
+          </div>
+          <div class="tab__swiper tab__best">
+            <div class="swiper mySwiper-best">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab__slide">
+                  <img src="./images/section/collection/coll_best_art.png" alt="입시미술">
+                  <div class="tab__textbox">
+                    <div class="tab--top">
+                      <span>입시</span>
+                      <span>고등부</span>
+                      <span>실시</span>
+                    </div>
+                    <div class="tab--center">
+                      <strong>입시미술 필수용품 할인</strong>
+                    </div>
+                    <div class="tab--bottom">
+                      <span>입문자는 손쉽게, 숙련자는 특별하게</span>
+                    </div>
+                    <a href="" class="tab--btn">
+                      <span>view</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide tab__slide">
+                  <img src="./images/section/collection/coll_best_jang_baskia.png" alt="장미쉘바스키야">
+                  <div class="tab__textbox">
+                    <div class="tab--top">
+                      <span>그래피티</span>
+                      <span>팝아트</span>
+                      <span>앤디워홀</span>
+                    </div>
+                    <div class="tab--center">
+                      <strong>장 미쉘 바스키야 특별전</strong>
+                    </div>
+                    <div class="tab--bottom">
+                      <span>Swallow marker 12색</span>
+                    </div>
+                    <a href="#" class="tab--btn">
+                      <span>view</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide tab__slide">
+                  <img src="./images/section/collection/coll_best_sunsoo.png" alt="순수아크릴16색">
+                  <div class="tab__textbox">
+                    <div class="tab--top">
+                      <span>천연재료</span>
+                      <span>가성비</span>
+                      <span>취미</span>
+                    </div>
+                    <div class="tab--center">
+                      <strong>순수 아크릴 물감 16색</strong>
+                    </div>
+                    <div class="tab--bottom">
+                      <span>취미로 시작하기 딱 좋은 순한 아크릴 물감</span>
+                    </div>
+                    <a href="#" class="tab--btn">
+                      <span>view</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-btnlist prevbox">
+              <svg class="swiper-button swiper-button-prev best-prev prevbutton" viewBox="0 100 100 100">
+                <path class="line" d="M50,290 Q50,100 50,10">
+                  <animate attributeName="d" begin="bestoverlayprev.mouseover" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q0,140 50,10" />
+                  <animate attributeName="d" begin="bestoverlayprev.mouseout" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q0,140 50,10" to="M50,290 Q50,100 50,10" />
+                </path>
+                <rect id="bestoverlayprev" class="rect--op" width="100%" height="300%" />
+              </svg>
+              <p class="swiper-sidetext prevtext">PREV</p>
+            </div>
+            <div class="swiper-btnlist nextbox">
+              <svg class="swiper-button swiper-button-next best-next nextbutton" viewBox="0 100 100 100">
+                <path class="line" d="M50,290 Q50,100 50,10">
+                  <animate attributeName="d" begin="bestoverlaynext.mouseover" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q50,100 50,10" to="M50,290 Q100,140 50,10" />
+                  <animate attributeName="d" begin="bestoverlaynext.mouseout" dur="0.3s" fill="freeze"
+                    restart="whenNotActive" from="M50,290 Q100,140 50,10" to="M50,290 Q50,100 50,10" />
+                </path>
+                <rect id="bestoverlaynext" class="rect--op" width="100%" height="300%" />
+              </svg>
+              <p class="swiper-sidetext nexttext">NEXT</p>
+            </div>
+            <div class="swiper-scrollbar best-scroll"></div>
+          </div>
+        </section>
+        <!-- SI NEWS -->
+        <section id="news">
+          <h2 class="se--title">SI NEWS</h2>
+          <div class="swiper-news-box">
+            <div class="news__text">
+              <p>선인 화구에서<br>새로운 소식을 전해드립니다.</p>
+            </div>
+            <div class="swiper mySwiper-news">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/section/news/news_baskia.png" alt="바스키야 특별전">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/section/news/news_shparty.png" alt="엽서공모전">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./images/section/news/news_102.png" alt="뉴스레터102호">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-news-bullet"></div>
+          </div>
+        </section>
+      </div>
+      <!-- SI SNS -->
+      <section id="sns">
+        <h2 class="se--title">SI SNS</h2>
+        <div class="sns__itemlist">
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_ann.png" alt="ann">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_baskia.png" alt="baskia">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_bob.png" alt="bob">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_enter.png" alt="enter">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_flower.png" alt="flower">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_house.png" alt="house">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#"><img src="./images/section/sns/sns_distance.png" alt="distance">
+            </a>
+          </div>
+          <div class="sns__items">
+            <a href="#">
+              <img src="./images/section/sns/sns_pastel.png" alt="pastel">
+            </a>
+          </div>
         </div>
-        </section>
-
-        <!-- SH STORY -->
-        <section class="tab">
-            <div class="tab_container">
-                <h1>SH STORY</h1>                
-                    <div class="tab_in">
-                        <div class="tab_btn">
-                            <ul>
-                                <li><a href="#" class="active">Material</a></li>
-                                <li><a href="#">Inspiration</a></li>
-                                <li><a href="#">Artist</a></li>
-                                <li><a href="#">View</a></li>
-                            </ul>
-                        </div>
-                        <div class="tab_img">
-                            <ul>
-                                <li><a href="#"><img src="img/top-1.png" alt="tab1"></a></li>
-                                <li><a href="#"><img src="img/top-2.png" alt="tab2"></a></li>
-                                <li><a href="#"><img src="img/top-3.png" alt="tab3"></a></li>
-                                <li><a href="#"><img src="img/top-4.png" alt="tab4"></a></li>
-                            </ul>
-                        </div>
-                        <div class="tab_des">
-                            <ul>
-                                <li><a href="#">
-                                        <h2>5272만 9천</h2>
-                                        <p>해인사 팔만대장경은 1962년 12월 20일<br>
-                                            국보 제32호로 지정되었다. 유네스코<br>
-                                            한국위원회 홈페이지에 따르면 대장경<br>
-                                            이란 단어 자체가 '석가모니가 일생 동안<br>
-                                            설법한 경전과 계율 그리고 그 내용들에<br>
-                                            대해 후대의 사람들이 첨부한 논서,<br>
-                                            주석서, 이론서들을 집대성한 불교경전<br>
-                                            의 총서를 가리키는 말이다.</p>
-                                    </a>
-                                </li>
-                                <li><a href="#">
-                                        <h2>D.I.Y</h2>
-                                        <p>가끔 작업을 하다보면 작품에 맞는 <br>
-                                            캔버스 사이즈가 필요할 때가 있다. <br>
-                                            그때마다 작업노트에 메모를 해두고 <br>
-                                            실제 만드는 시간을 가져보았다.<br>
-                                            그림 위에 그림 또는 그림 위에 그림같은<br>
-                                            레이어작업을 진행 중이라 대현 캔버스<br>
-                                            틀이 많이 필요하다. 일반 캔버스 틀처럼<br>
-                                            정 왁구, 기타 왁구처럼 틀을 고정시키는<br>
-                                            중간틀이 필요가 없다.</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h2>안창수 화백</h2>
-                                        <p>동양화가 설파 안창수(75) 화백은 <br>
-                                            자타가 공인하는 인생 2모작에 <br>
-                                            성공한 인물이다. 그는 은행에서 전문<br>
-                                            금융인으로 정년퇴직한 뒤에 그림을 <br>
-                                            배워 화가로 유명세를 타고 있다. <br>
-                                            누구나 “그게 어떻게 가능하죠?”라고 <br>
-                                            물음표를 던지지만 그의 말을 듣다보면 <br>
-                                            자신의 잠재력을 스스로 발굴해 낸 <br>
-                                            도전과 노력에 고개가 끄덕여진다.</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h2>사막의 보석</h2>
-                                        <p>이집트에서 가장 유명한 관광명소는 <br>
-                                            기자의 피라미드들로, 고대 7대 불가사<br>
-                                            의들 중 유일하게 현존해있는 건축물이<br>
-                                            기도 하다. 이집트는 약 3,000여 킬로미<br>
-                                            터에 달하는 지중해에 접한 해안선이 <br>
-                                            있는데, 이도 유명한 관광지이다. 아카<br>
-                                            바 만, 룩소르, 라스 시디르, 다하브, <br>
-                                            마르사 알람, 엘 세이크 등이 유명하다.</p>
-                                    </a>
-                                </li>
-        
-                            </ul>
-                        </div>                        
-                    </div>                
-            </div>
-        </section>
-
-        <!-- SH collection -->
-        <section class="collection">
-            <h1>SH COLLECTION</h1>
-            <div class="tab_slide">
-                <div class="tab_title">
-                    <a href="#" class="new active">신제품</a>
-                    <a href="#" class="best">추천제품</a>
-                </div>
-                <div class="tab_slide_con">
-                    <div class="tab_slide_list t1 active">
-                        <!-- 신제품 슬라이드 swiper-->
-                        <div class="swiper mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide new1">
-                                    <!-- 오버플로우 숨김 박스 -->
-                                    <div class="cover_bg_1">
-                                    <h2>SWC TINT 12색 세트 출시</h2>
-                                    <p>신한 최고급 전문가<br>수채화물감</p>
-                                    <!-- <a href="#">
-                                        <i>VIEW</i>
-                                        <span></span>
-                                    </a> -->
-                                    <button type="button" onclick="alert('Hello World!')">
-                                        VIEW
-                                        <div class="button_action"></div>
-                                    </button>   
-                                    </div>                              
-                                    
-                                </div>
-                                <div class="swiper-slide new2">
-                                    <div class="cover_bg_2">
-                                        <div class="n1_2">부드러운느낌</div>
-                                        <div class="n2_2">가성비</div>
-                                        <div class="n3_2">호환성</div>
-                                        <h2>PANPASTEL PRODUCTS</h2>
-                                        <p>자신만의 개성있는<br>작품을 완성하세요.</p>
-                                        <button type="button" onclick="alert('Hello World!')">
-                                            VIEW
-                                            <div class="button_action">
-                                            </div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide new3">
-                                    <button type="button" onclick="alert('Hello World!')">
-                                        VIEW
-                                        <div class="button_action">
-                                        </div>
-                                    </button> 
-                                </div>
-
-                            </div>
-                            <!-- 좌우 버튼 --> 
-                            <div class="swiper-button-next myNext2"></div>
-                            <div class="swiper-button-prev myPrev2"></div>
-                            <!-- 스크롤바 -->
-                            <div class="swiper-scrollbar bar1"></div>
-                        </div>
-                    </div> 
-                    <div class="tab_slide_list t2 active">
-                        <!-- 추천제품 슬라이드 -->
-                        <div class="swiper mySwiper3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide best1">
-                                    <!-- 오버플로우 숨김 박스 -->
-                                    <div class="cover_bg_a">
-                                    <h2>입시미술 필수용품 할인점</h2>
-                                    <p>입문자는 손쉽게<br>전문가는 특별하게</p>
-                                    <button type="button" onclick="alert('Hello World!')">
-                                        VIEW
-                                        <div class="button_action"></div>
-                                    </button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide best2">
-                                    <div class="cover_bg_b">
-                                        <h2>장 미쉘 바스키아 & <img src="./img/SHminiLogo.png" style="width:29px; height:23px;">SH</h2>
-                                        <p>스왈로우 스페셜 마커 12색</p>
-                                        <button type="button" onclick="alert('Hello World!')">
-                                            VIEW
-                                            <div class="button_action"></div>
-                                        </button>
-
-                                        
-                                    </div>
-                                </div>
-                                <div class="swiper-slide best3">
-                                    <div class="cover_bg_c">
-                                        <div class="b1_a">취미반</div>
-                                        <div class="b2_b">가성비</div>
-                                        <div class="b3_c">천연재료사용</div>
-                                        <h2>신한 순수 아크릴 물감 16색</h2>
-                                        <p>취미로 시작하기 딱 좋은<br>순한 아크릴 물감</p>
-                                        <button type="button" onclick="alert('Hello World!')">VIEW
-                                            <div class="button_action">
-                                
-                                            </div>
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <!-- 좌우 버튼 -->
-                            <div class="swiper-button-next myNext3"></div>
-                            <div class="swiper-button-prev myPrev3"></div>
-                            <!-- 스크롤바 -->
-                            <div class="swiper-scrollbar bar2"></div>
-                        </div>
-        
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SH NEWS -->
-        <section class="banner">
-            <div class="banner_in">
-                <h1>SH NEWS</h1>
-                <div class="banner_box">
-                    <div class="banner_title">
-                        <h2>신한 화구에서<br>새로운 소식을 전해드립니다.  </h2>        
-                    </div>
-                    <div class="banner_img">
-                        <ul>
-                            <li class="event1"><a href="#"></a></li>
-                            <li class="event2"><a href="#"></a></li>
-                            <li class="event3"><a href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="banner_btn">
-                        <ul>
-                            <li class="active"><a href="#"> 
-                                <span>EVENT</span>
-                                <p>장 미쉘 바스키아 특별전</p>
-                            </a></li>
-                            <li><a href="#">
-                                <span>EVENT</span>
-                                <p>24회 신한 엽서 공모전</p>
-                            </a></li>
-                            <li><a href="#">
-                                <span>EVENT</span>
-                                <p>신한화구 뉴스레터 제102호</p>
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>        
-        </section>
-
-        <!-- SH SNS -->
-        <section class="news">
-            <div class="news_in">
-                <h1>SH SNS</h1>
-                <div class="news_list">
-                    <ul>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_1.png" alt="1">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_2.png" alt="2">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_3.png" alt="3">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_4.png" alt="4">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_5.png" alt="5">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_6.png" alt="6">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_7.png" alt="7">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="news_img">
-                                    <img src="img/NEWS_8.png" alt="8">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>    
-        <!-- 구글 지도 연결 -->
-        <section class="map">
-            <div class="map_search">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.2205083848057!2d126.93009951571275!3d37.62050057978786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9792ade3c345%3A0x73b38bc4e91ebc76!2z7ISc7Jq47Yq567OE7IucIOydgO2Pieq1rCDrtojqtJHroZwgMTU0!5e0!3m2!1sko!2skr!4v1650860424066!5m2!1sko!2skr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="search_barx">
-                    <!-- 서치메뉴 만들 공간(형제 만들고 같이 묵은후 엡솔루트겹추주기) -->
-                </div>
+        <div class="sns__iconlist">
+          <a href="#" class="sns__icon">
+            <img src="./images/section/sns/con6-bts1.png" alt="instagram">
+          </a>
+          <a href="#" class="sns__icon">
+            <img src="./images/section/sns/con6-bts2.png" alt="facebook">
+          </a>
+          <a href="#" class="sns__icon">
+            <img src="./images/section/sns/con6-bts3.png" alt="naverblog">
+          </a>
+          <a href="#" class="sns__icon">
+            <img src="./images/section/sns/con6-bts4.png" alt="youtube">
+          </a>
         </div>
-        </section>
-
-        <section class="icons">
-            <div class="icons_in">
-                <ul>
-                    <li><a href="#">
-                            <img src="img/top-img/A_S.png" alt="제품 메뉴얼">
-                            <p>A/S 상담</p>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="img/top-img/QNA.png" alt="상담">
-                            <P>자주 묻는 질문</P>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="img/top-img/BOOKK.png" alt="메뉴얼">
-                            <P>제품 메뉴얼</P>
-                        </a>
-                    </li>
-                </ul>
+      </section>
+      <!-- SI MAPS -->
+      <div id="maps">
+        <div class="maps__area">
+          <div class="maps__img">
+            <img src="./images/section/maps/maps_img.jpg" alt="mapsimage">
+          </div>
+          <div class="maps__inner">            
+            <div class="maps__search">
+              <p class="maps__text">
+                현재 고객님과 가까운<br>매장을 안내해 드립니다.
+              </p>
+              <p class="maps__input">
+                <input type="text" placeholder="매장명 및 지역 검색" class="maps__input--bar">
+                <a href="#" class="maps__input--btn">
+                  <i class="fa-solid fa-magnifying-glass">
+                    <span class="ir-text">검색</span>
+                  </i>
+                </a>
+              </p>
             </div>
-        </section>
-
-        <section class="info">
-            <div class="custom">
-                <div class="custom_center">
-                    <h4>고객센터</h4>
-                    <p>1599-7121</p>
-                    <span>(09:30~18:30, 토요일&공휴일 휴무)</span>
-                </div>
-                <div class="as">
-                    <h4>A/S 문의</h4>
-                    <p>080-735-7123</p>
-                    <span>(09:30~18:30, 토요일&공휴일 휴무)</span>
-                </div> 
-            </div>
-            <div class="app">
-                <p>언제 어디서든 신한화구의<br>최신 소식을 <img src="./img/SHminiLogo.png">SH.APP으로 만나보세요!</p>
-                <button><span>APP STORE</span></button>
-                <button class="bt4"><span>GOOGLE PLAY</span></button>    
-                <a href="#">more</a>
-            </div>            
-        </section>
-        
-        <footer>
-            <div class="footer_in">
-                <div class="addr">
-                    <div class="company">
-                        <ul>
-                            <li><a href="#">기업정보</a></li>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">실기대회 </a></li>
-                            <li><a href="#">이메일주소무단수집거부</a></li>
-                        </ul>
-                    </div>
-                    <address>
-                        <P>(주)신한화구&nbsp
-                            대표이사 : 한봉근
-                            사업자등록번호 : 122-81-12125<br>
-                            경기도 파주시 상자석길 153
-                            대표전화 : 02)357-2651
-                            FAX : 02)357-7481
-                            전자우편 : shinhan@shinhanart.co.kr<br>
-                            통신판매업 신고번호 2005-경기파주-382
-                            개인정보관리책임자 : 박진우<br>
-                        </P>
-                        <span>COPYRIGHT (C) SH CORPORATION ALL RIGHTS RESERVED</span>
-                    </address>
-                </div>
-                
-                <div class="family">
-                    <div class="fa_title">
-                        <a href="#">FAMILY SITE</a>
-                        <span><img src="img/arrow-black.png" alt="arr"></span>
-                    </div>
-                    <div class="fa_con">
-                        <ul>
-                            <li><a href="#">TOUCH</a></li>
-                            <li><a href="#">SWC</a></li>
-                            <li><a href="#">SH#</a></li>
-                            <li><a href="#">SHaMi</a></li>
-                        </ul>
-                        <a href="#"><img src="img/arrow-white.png" alt="arr2"></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>    
-    <!-- top 버튼 -->
-    <div class="top">TOP</div>
-    <!-- 사이트맵 -->
-    <div class="site">
-
-        <div class="site_menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">About Us</a>
-                        <p class="line1"></p>
-                        <ul class="sub">
-                            <li><a href="#">shinhanArt</a></li>
-                            <li><a href="#">Our History</a></li>
-                            <li><a href="#">Contect Us</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Import Brands</a>
-                        <p class="line2"></p>
-                        <ul class="sub">
-                            <li><a href="#">FLEUR</a></li>
-                            <li><a href="#">PANPASTEL</a></li>
-                            <li><a href="#">BB</a></li>
-                            <li><a href="#">MAGNANI</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Inspiration</a>
-                        <p class="line3"></p>
-                        <ul class="sub">
-                            <li><a href="#">Artist</a></li>
-                            <li><a href="#">Thinkart Korea</a></li>
-                            <li><a href="#">Postcard Contest</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Community</a>
-                        <p class="line4"></p>
-                        <ul class="sub">
-                            <li><a href="#">Tip & Techniques</a></li>
-                            <li><a href="#">Blog & post</a></li>
-                            <li><a href="#">Event</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="site_bg">
-                <ul>
-                    <li class="bv bgd_1">                     
-                    </li>
-                    <li class="bv bgd_2">                        
-                    </li>
-                    <li class="bv bgd_3">                        
-                    </li>
-                    <li class="bv bgd_4">                        
-                    </li>
-                </ul>                
-            </div>
+          </div>
         </div>
-    
-        <div class="site_map">
-            <div class="site_close">
-                <a href="#"><img src="img/wht-xbtn.png" alt="close"></a>
-            </div>
-            <div class="site_nav">
-                <ul>
-                    <li><a href="#">종이</a>
-                        <ul class="suv"> 
-                            <li><a href="#">A4전지</a></li>
-                            <li><a href="#">B4전지</a></li>
-                            <li><a href="#">대형전지</a></li>
-                            <li><a href="#">아크릴전용</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">물감</a>
-                        <ul class="suv">
-                            <li><a href="#">수채화</a></li>
-                            <li><a href="#">포스터컬러</a></li>
-                            <li><a href="#">아크릴물감</a></li>
-                            <li><a href="#">페인트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">브러쉬</a>
-                        <ul class="suv">
-                            <li><a href="#">모피</a></li>
-                            <li><a href="#">공업용</a></li>
-                            <li><a href="#">폴리에스테르</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">팔레트</a>
-                        <ul class="suv">
-                            <li><a href="#">목재</a></li>
-                            <li><a href="#">플라스틱</a></li>
-                            <li><a href="#">우레탄</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">장소대여</a>
-                        <ul class="suv">
-                            <li><a href="#">위치검색</a></li>
-                            <li><a href="#">지도</a></li>
-                            <li><a href="#">대여정보</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">판화</a>
-                        <ul class="suv">
-                            <li><a href="#">금속판화</a></li>
-                            <li><a href="#">목재판화</a></li>
-                            <li><a href="#">청동판화</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">조각</a>
-                        <ul class="suv">
-                            <li><a href="#">대리석</a></li>
-                            <li><a href="#">청동</a></li>
-                            <li><a href="#">목재</a></li>
-                            <li><a href="#">점토</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">시각미술</a>
-                        <ul class="suv">
-                            <li><a href="#">비디오아트</a></li>
-                            <li><a href="#">디지털아트</a></li>
-                            <li><a href="#">팝아트</a></li>
-                            <li><a href="#">행위예술</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">C/A</a>
-                        <ul class="suv">
-                            <li><a href="#">PhotoSHOP</a></li>
-                            <li><a href="#">Ai</a></li>
-                            <li><a href="#">Graphics</a></li>
-                            <li><a href="#">CAD</a></li>
-                        </ul>
-                    </li>                    
-                </ul>
-            </div>
-            <div class="site_banner">
-                <ul>
-                    <li class="sm_1"><a href="#">신한 쇼핑몰 바로가기</a></li>
-                    <li class="sm_2"><a href="#">신한 해리츠 바로가기</a></li>
-                    <li class="sm_3"><a href="#">신한 에비뉴 바로가기</a></li>
-                </ul>
-            </div>
+      </div>
+      </div>
+      <!-- SI INFO -->
+      <div id="info">
+        <a href="#">
+          <span>제품 메뉴얼</span>
+        </a>
+        <a href="#">
+          <span>A/S 및 상담</span>
+        </a>
+        <a href="#">
+          <span>자주 묻는 질문</span>
+        </a>
+      </div>
+
+      
+      <!-- 🍕🍕🍕🍕🍕 시작/ -->
+      <div id="attach">
+        <div class="attach__left">
+          <div>
+            <strong>고객센터</strong>
+            <p>1599-7121</p>
+            <span>(09:30~18:30, 토요일&공휴일 휴무)</span>
+          </div>
+          <div>
+            <strong>A/S 문의</strong>
+            <p>080-735-7123</p>
+            <span>(09:30~18:30, 토요일&공휴일 휴무)</span>
+          </div>
         </div>
+        <div class="attach__right"></div>
+      </div>  
+
+
     </div>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <div class="searchbg"></div>
+  </div><!-- wrap END -->
 </body>
+
 </html>
